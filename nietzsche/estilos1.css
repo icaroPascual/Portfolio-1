@@ -1,0 +1,48 @@
+main {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: #E3E4E5;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+    margin: 0%;
+    margin-bottom: 0px;
+}
+
+figure {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#tribute-info {
+    width: 800px;
+    margin: auto;
+}
+
+#title {
+    letter-spacing: 2px;
+}
+
+strong {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    font-size: 16px;
+}
+
+@media(max-width: 800px) {
+    #tribute-info {
+        width: auto;
+    }
+}
