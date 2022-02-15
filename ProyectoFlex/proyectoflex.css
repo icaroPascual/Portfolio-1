@@ -1,0 +1,267 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: coral;
+    text-decoration: none;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno {
+    padding: 0 50px;
+}
+
+.header {
+    background: url(img/pexels-carolina-roepers-753575.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.off {
+    font-weight: bold;
+}
+
+.menu {
+    background: rgba(143, 139, 139, 0.5);
+    display: flex;
+    height: 80px;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.logo {
+    flex: 1 1 auto;
+}
+
+.logo a {
+    font-size: 50px;
+}
+
+.logo a:hover {
+    color: cyan;
+}
+
+
+.nav {
+    flex: 3 1 auto;
+    text-align: center;
+}
+
+.nav a {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0 5px;
+    letter-spacing: 2px;
+}
+
+.nav a:hover {
+    color: cyan;
+}
+
+.social {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.social a {
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.social a:hover {
+    color: cyan;
+}
+
+.texto-principal {
+    display: flex;
+    align-items: center;
+    height: 580px;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 21px;
+    color: coral;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.section {
+    background: darkgray;
+    display: flex;
+}
+
+.articulos {
+    background: rgba(143, 139, 139, 0.3);
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.article {
+    color: coral;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 10px 0px 0px;
+    flex: 1 1 45%;
+    background: black;
+    text-align: center;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+}
+
+.article a {
+    background-color: grey;
+    color: black;
+    font-size: 13px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.article a:hover {
+    background-color: cyan;
+}
+
+.h3 {
+    color: coral;
+    font-size: 13px;
+    padding: 10px;
+    margin-top: -80px;
+}
+
+.h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 0px 0 10px 0;
+    color: coral;
+}
+
+.navegacion {
+    background: black;
+    flex: 1 1 100%;
+    margin: 10px;
+}
+
+.navegacion a {
+    color: coral;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.aside {
+    flex: 1 1 auto;
+    margin: 10px 5px 10px 0;
+    flex-wrap: wrap;
+}
+
+.aside img {
+    width: 100%;
+}
+
+h4 {
+    background: #000;
+    color: coral;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* .publicidad{
+    background: darkred; 
+} */
+.footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.pie {
+    background: black;
+    text-align: center;
+
+    padding: 10px;
+}
+
+.pie a {
+    font-size: 20px;
+    padding: 10px;
+    letter-spacing: 3px;
+
+}
+
+
+@media all and (max-width: 1120px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    .texto-principal {
+        height: 450px;
+    }
+}
+
+
+@media all and (max-width: 650px) {
+    .articulos {
+        flex-direction: column;
+    }
+
+    .off {
+        display: none;
+    }
+
+    .nav a {
+        font-size: 24px;
+    }
+
+    .logo {
+        letter-spacing: 5px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .aside {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+}
